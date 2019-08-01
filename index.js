@@ -9,9 +9,6 @@
     blue: 0
   }
 
-
-
-
   // change event in eventListener for input HTML tag
 
   sliders.addEventListener('change', e => {
@@ -46,6 +43,11 @@
     })
     return colorValue
   }
+
+  // mouse on the button to see HEX value
+  result.addEventListener('mouseover', e => {
+    result.innerHTML = `#${showHex(colorValue.red, colorValue.green, colorValue.blue)}`
+  })
 
   // click on button copy to clipboard
   result.addEventListener('click', e => {
