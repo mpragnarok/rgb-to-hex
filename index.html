@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RGB to HEX Converter</title>
+  <!-- import bootstrap style -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+  <!-- import font awesome -->
+  <script src="https://kit.fontawesome.com/7af529b961.js"></script>
+
+</head>
+
+<body>
+
+  <div class="sliders d-flex flex-column justify-content-center align-items-center my-5">
+
+    <!-- red controller panal -->
+    <div class="row mb-5">
+      <button type="button" class="btn btn-lg btn-danger mr-2" disabled>R</button>
+      <input type="range" id="red" class="mr-2 slider" min="0" max="255" value="0" data-color="r">
+      <button type="button" class="btn btn-lg btn-danger mr-2" style="width: 100px;" disabled data-color="r">0</button>
+    </div>
+    <!-- green controller panal -->
+    <div class="row mb-5">
+      <button type="button" class="btn btn-lg btn-success mr-2" disabled>G</button>
+      <input type="range" id="green" class="mr-2 slider" min="0" max="255" value="0" data-color="g">
+      <button type="button" class="btn btn-lg btn-success mr-2" style="width: 100px;" disabled data-color="g">0</button>
+    </div>
+    <!-- blue controller panal -->
+    <div class="row mb-5">
+      <button type="button" class="btn btn-lg btn-primary mr-2" disabled>B</button>
+      <input type="range" id="blue" class="mr-2 slider" min="0" max="255" value="0" data-color="b">
+      <button type="button" class="btn btn-lg btn-primary mr-2 " style="width: 100px;" disabled
+        data-color="b">0</button>
+    </div>
+    <!-- show the color -->
+    <div class="show-color">
+      <button type="button" class="btn btn-lg btn-light" id="result" style="width: 300px;">Clip to Copy</button>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- import jquery and bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+
+  <!-- import JavaScript -->
+  <script src="index.js"></script>
+</body>
+
+</html>
