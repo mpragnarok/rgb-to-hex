@@ -11,7 +11,7 @@
 
   // change event in eventListener for input HTML tag
 
-  sliders.addEventListener('change', e => {
+  sliders.addEventListener('input', e => {
 
     let colorNumberTag = e.target.nextElementSibling
     getColorValue()
